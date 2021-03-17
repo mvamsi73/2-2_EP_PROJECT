@@ -1,6 +1,8 @@
 package projectpack;
 import java.sql.*;
 import java.util.List;
+import java.util.Random;
+
 import bean.*;
 import org.hibernate.Query;
 public class CRUD 
@@ -108,5 +110,85 @@ public class CRUD
 		q.setParameter("key", key);
 		int i=q.executeUpdate();
 		return i;
+	}
+	public int insertsemester(semesterbean sb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(sb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public int insertbranch(branchbean bb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(bb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public int insertcourse(coursebean cb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(cb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public int inserteasyquestion(neweasyquestionbean qb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(qb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public int insertmediumquestion(newmediumquestionbean qb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(qb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public int inserthardquestion(newhardquestionbean qb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(qb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public List<neweasyquestionbean> geteasyquestions()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from neweasyquestionbean");
+		List<neweasyquestionbean> easy=q.list();
+		return easy;
+	}
+	public List<newmediumquestionbean> getmediumquestions()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from newmediumquestionbean");
+		List<newmediumquestionbean> medium=q.list();
+		return medium;
+	}
+	public List<newhardquestionbean> gethardquestions()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from newhardquestionbean");
+		List<newhardquestionbean> hard=q.list();
+		return hard;
+	}
+	public void getquestions()
+	{
+		Random r=new Random(6);
+			System.out.println(r.nextLong());
 	}
 }

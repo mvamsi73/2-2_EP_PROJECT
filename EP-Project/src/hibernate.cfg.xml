@@ -13,5 +13,11 @@
         <property name="show_sql">true</property>
         <mapping class="bean.ProjectSignUpBean"></mapping>
         <mapping class="bean.admin"></mapping>
+        <mapping class="bean.semesterbean"></mapping>
+        <mapping class="bean.branchbean"></mapping>
+        <mapping class="bean.coursebean"></mapping>
+        <mapping class="bean.neweasyquestionbean"></mapping>
+        <mapping class="bean.newmediumquestionbean"></mapping>
+        <mapping class="bean.newhardquestionbean"></mapping>
     </session-factory>
 </hibernate-configuration>

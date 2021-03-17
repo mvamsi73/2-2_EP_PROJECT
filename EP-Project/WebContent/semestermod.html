@@ -2,12 +2,65 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Semester</title>
+<script type="text/javascript">
+function validate()
+{
+var semnum=document.sem.semnum.value;
+var semtype=document.sem.semtype.value;
+var numofst=document.sem.numofst.value;
+var numofbranch=document.sem.numofbranch.value;
+
+if(semnum=="select")
+	{
+	alert("Please select semester number");
+	document.sem.semnum.focus();
+	return false;
+	
+	}
+else if(semtype=="select")
+	{
+	alert("Please select semester type");
+	document.sem.semtype.focus();
+	return false;
+	}
+else if(numofst=="")
+	{
+	alert("Number of students field should not be empty");
+	document.sem.numofst.focus();
+	return false;
+	}
+else if(numofbranch=="")
+	{
+	alert("Number of branches field should not be empty");
+	document.sem.numofbranch.focus();
+	return false;
+	}
+else if(semtype=="even" && parseInt(semnum)%2!=0 || semtype=="odd" && parseInt(semnum)%2==0)
+	{
+	alert("Semester Type and Semester Number does not match");
+	return false;
+	}
+}
+</script>
 </head>
 <body>
-<form action="servname" method="post">
+<form name="sem" action="semesterserv" method="post" onSubmit="return validate()">
 <table align="center">
-<tr><td>Current Semester Number:</td><td><input type="text" name=semnum></td></tr>
+<tr><td>Current Semester Number:</td><td>
+<select id="semnum" name="semnum">
+ 
+  <option value="select">Select</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+</select>
+</td></tr>
 <tr><td><label for="semtype">Choose Sem Type:</label></td>
 <td><select id="semtype" name="semtype">
  
@@ -16,8 +69,9 @@
   <option value="odd">Odd</option>
 </select>
 </td></tr>
-<tr><td>Number of Students in the Semester:</td><td><input type="text" name=numofst></td></tr>
-<tr><td>Number of Branches in the Semester:</td><td><input type="text" name=numofbranch></td></tr>
+<tr><td>Number of Students in the Semester:</td><td><input type="number" name=numofst></td></tr>
+<tr><td>Number of Branches in the Semester:</td><td><input type="number" name=numofbranch></td></tr>
+<tr><td><input type="submit"></td></tr>
 </table>
 </form>
 </body>

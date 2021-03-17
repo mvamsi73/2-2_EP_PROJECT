@@ -99,4 +99,44 @@
     <servlet-name>deleteaccount</servlet-name>
     <url-pattern>/deleteaccount</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>semesterserv</display-name>
+    <servlet-name>semesterserv</servlet-name>
+    <servlet-class>projectpack.semesterserv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>semesterserv</servlet-name>
+    <url-pattern>/semesterserv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>branchserv</display-name>
+    <servlet-name>branchserv</servlet-name>
+    <servlet-class>projectpack.branchserv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>branchserv</servlet-name>
+    <url-pattern>/branchserv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>courseserv</display-name>
+    <servlet-name>courseserv</servlet-name>
+    <servlet-class>projectpack.courseserv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>courseserv</servlet-name>
+    <url-pattern>/courseserv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addnewquestionserv</display-name>
+    <servlet-name>addnewquestionserv</servlet-name>
+    <servlet-class>projectpack.addnewquestionserv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addnewquestionserv</servlet-name>
+    <url-pattern>/addnewquestionserv</url-pattern>
+  </servlet-mapping>
 </web-app>

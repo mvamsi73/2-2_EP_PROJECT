@@ -20,6 +20,8 @@
 <button onclick="document.location='signup.jsp'">Add-New-Account</button><br>
 <button onclick="document.location='updateaccount.jsp'">Update Account Details</button><br>
 <button onclick="document.location='deleteaccount.jsp'">Delete Account</button><br>
+<button onclick="document.location='addnewquestion.jsp'">Add New Question</button><br>
+<button onclick="document.location='viewquestions.jsp'">View All Questions</button><br>
 <% } 
    else
    {
