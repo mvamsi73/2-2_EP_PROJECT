@@ -139,4 +139,14 @@
     <servlet-name>addnewquestionserv</servlet-name>
     <url-pattern>/addnewquestionserv</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>setquestionpaperbeanvalues_stage1</display-name>
+    <servlet-name>setquestionpaperbeanvalues_stage1</servlet-name>
+    <servlet-class>projectpack.setquestionpaperbeanvalues_stage1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setquestionpaperbeanvalues_stage1</servlet-name>
+    <url-pattern>/setquestionpaperbeanvalues_stage1</url-pattern>
+  </servlet-mapping>
 </web-app>

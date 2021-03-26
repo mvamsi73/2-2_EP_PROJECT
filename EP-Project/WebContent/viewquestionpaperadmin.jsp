@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ page import="bean.*" %>
     <%@ page import="projectpack.*" %>
+    <%@ page import="bean.*" %>
     <%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
@@ -10,17 +10,16 @@
 <title>Question Paper</title>
 </head>
 <body>
-<a href="./logout" style="text-decoration: none; color: black ;float:right;">Logout</a>
+<table align="center" border="1px">
 <%
 CRUD cd=new CRUD();
-getfinalpaperlist fplist=new getfinalpaperlist();
-setquestionpaperbeanvalues_stage2 sqb=new setquestionpaperbeanvalues_stage2();
-questionpaperbean qb=(questionpaperbean)request.getAttribute("questionpaperbean");
-ArrayList<String> finalpaper=fplist.getfinalpaper(qb);
-sqb.setvalues(qb,finalpaper);
-if(cd.insertnewqpaper(qb)>0)
-{
+int paperid=Integer.parseInt(request.getParameter("paperid"));
+List<questionpaperbean> data=cd.getgeneratedpaperspaperid(paperid);
 %>
+<h1 align="center">Paper-Id:<%=paperid %></h1>
+<%
+for(questionpaperbean qb:data)
+{%>
 	<h1 align="center">PART-A</h1>
 	<p align="right" style="color:red">Total Part-A Marks:<%=qb.getTotalpartAmarks() %></p>
 	<table align="center" border="1px">
@@ -61,9 +60,10 @@ if(cd.insertnewqpaper(qb)>0)
 	<tr><td>19</td><td><%=qb.getQuestion19() %></td></tr>
 	<tr><td>20</td><td><%=qb.getQuestion20() %></td></tr>
 	</table>
-<%
-}
+	
+<%}
 %>
-<button><a href="welcome.html">Go to Home</a></button>
+</table>
+<button><a href="adminhome.jsp">Go to Home</a></button>
 </body>
 </html>

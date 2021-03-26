@@ -19,14 +19,14 @@ if(!id.equals("null"))
    {
 %>
 <h1 align="center">Accounts Details</h1>
-	<tr><td>ID</td><td>Name</td><td>Email</td><td>Department</td><td>Phone Number</td><td>Designation</td><td>Subject</td><td>Password</td></tr>
+	<tr><td>ID</td><td>Name</td><td>Email</td><td>Department</td><td>Phone Number</td><td>Designation</td><td>Subject</td><td>Password</td><td>Generated Papers</td></tr>
 <% CRUD cd=new CRUD();
 	List<ProjectSignUpBean> data=cd.display();
 	for(ProjectSignUpBean i:data)
 	{
 	%>
 	
-	<tr><td><%=i.getId() %></td><td><%=i.getName() %></td><td><%=i.getEmail() %></td><td><%=i.getDept() %></td><td><%=i.getPhno() %></td><td><%=i.getPosition() %></td><td><%=i.getSubject() %></td><td><%=i.getPassword() %></td></tr>
+	<tr><td><%=i.getId() %></td><td><%=i.getName() %></td><td><%=i.getEmail() %></td><td><%=i.getDept() %></td><td><%=i.getPhno() %></td><td><%=i.getPosition() %></td><td><%=i.getSubject() %></td><td><%=i.getPassword() %></td><td><form action="facultywisegeneratedpapers.jsp" method="post"><input type="hidden" name="facid" value=<%=i.getId() %>><input type="submit" value="View Generated Papers"></form></td></tr>
 	
 	<% }%>
 	</table>

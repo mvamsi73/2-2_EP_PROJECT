@@ -8,6 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import bean.*;
 public class courseserv extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -15,6 +17,9 @@ public class courseserv extends HttpServlet {
 	{
 		String cname=request.getParameter("cname");
 		String ccode=request.getParameter("ccode");
+		HttpSession ht=request.getSession();
+		ht.setAttribute("cname", cname);
+		ht.setAttribute("ccode", ccode);
 		int numofst=Integer.parseInt(request.getParameter("numofstudents"));
 		int paperid=Integer.parseInt(request.getParameter("paperid"));
 		coursebean cb=new coursebean();

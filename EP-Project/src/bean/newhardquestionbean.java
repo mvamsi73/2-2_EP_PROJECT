@@ -10,13 +10,6 @@ public class newhardquestionbean
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int questionnumber;
-	private int marks;
-	public int getMarks() {
-		return marks;
-	}
-	public void setMarks(int marks) {
-		this.marks = marks;
-	}
 	private String questiondescription;
 	private String difficultylevel;
 	public int getQuestionnumber() {

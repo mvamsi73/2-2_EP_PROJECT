@@ -25,13 +25,12 @@ public class signinwelcome extends HttpServlet {
 		int id= (Integer) ( ht.getAttribute("id"));
 		if(id!=0)
 		{
-		ProjectLogInBean sb=(ProjectLogInBean) request.getAttribute("ProjectLogInBean");
 		CRUD cd =new CRUD();
 			
 				PrintWriter pw=response.getWriter();
 				RequestDispatcher rd=request.getRequestDispatcher("welcome.html");
 				rd.include(request, response);
-				pw.print("Welcome "+cd.getName(sb)+"<br>Your SignIn is Successful");
+				pw.print("Welcome "+cd.getfacultyName(id)+"<br>Your SignIn is Successful");
 		
 		}
 		else

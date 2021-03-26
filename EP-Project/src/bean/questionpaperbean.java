@@ -7,27 +7,10 @@ public class questionpaperbean
 	@Id
 	private int paperid;
 	private int generatorid;
-	private int totalpartAmarks;
-	private int totalpartBmarks;
-	private int totalpartCmarks;
-	public int getTotalpartAmarks() {
-		return totalpartAmarks;
-	}
-	public void setTotalpartAmarks(int totalpartAmarks) {
-		this.totalpartAmarks = totalpartAmarks;
-	}
-	public int getTotalpartBmarks() {
-		return totalpartBmarks;
-	}
-	public void setTotalpartBmarks(int totalpartBmarks) {
-		this.totalpartBmarks = totalpartBmarks;
-	}
-	public int getTotalpartCmarks() {
-		return totalpartCmarks;
-	}
-	public void setTotalpartCmarks(int totalpartCmarks) {
-		this.totalpartCmarks = totalpartCmarks;
-	}
+	private double totalpartAmarks;
+	private double totalpartBmarks;
+	private double totalpartCmarks;
+	private double totalpartDmarks;
 	private int numofpartAeasyquestions;
 	private int numofpartAmediumquestions;
 	private int numofpartAhardquestions;
@@ -37,6 +20,21 @@ public class questionpaperbean
 	private int numofpartCeasyquestions;
 	private int numofpartCmediumquestions;
 	private int numofpartChardquestions;
+	private int numofpartDeasyquestions;
+	private int numofpartDmediumquestions;
+	private int numofpartDhardquestions;
+	private double partAeasyquestionsmarks;
+	private double partAmediumquestionsmarks;
+	private double partAhardquestionsmarks;
+	private double partBeasyquestionsmarks;
+	private double partBmediumquestionsmarks;
+	private double partBhardquestionsmarks;
+	private double partCeasyquestionsmarks;
+	private double partCmediumquestionsmarks;
+	private double partChardquestionsmarks;
+	private double partDeasyquestionsmarks;
+	private double partDmediumquestionsmarks;
+	private double partDhardquestionsmarks;
 	public int getNumofpartAeasyquestions() {
 		return numofpartAeasyquestions;
 	}
@@ -91,6 +89,124 @@ public class questionpaperbean
 	public void setNumofpartChardquestions(int numofpartChardquestions) {
 		this.numofpartChardquestions = numofpartChardquestions;
 	}
+	public int getNumofpartDeasyquestions() {
+		return numofpartDeasyquestions;
+	}
+	public void setNumofpartDeasyquestions(int numofpartDeasyquestions) {
+		this.numofpartDeasyquestions = numofpartDeasyquestions;
+	}
+	public int getNumofpartDmediumquestions() {
+		return numofpartDmediumquestions;
+	}
+	public void setNumofpartDmediumquestions(int numofpartDmediumquestions) {
+		this.numofpartDmediumquestions = numofpartDmediumquestions;
+	}
+	public int getNumofpartDhardquestions() {
+		return numofpartDhardquestions;
+	}
+	public void setNumofpartDhardquestions(int numofpartDhardquestions) {
+		this.numofpartDhardquestions = numofpartDhardquestions;
+	}
+	public double getPartAeasyquestionsmarks() {
+		return partAeasyquestionsmarks;
+	}
+	public void setPartAeasyquestionsmarks(double partAeasyquestionsmarks) {
+		this.partAeasyquestionsmarks = partAeasyquestionsmarks;
+	}
+	public double getPartAmediumquestionsmarks() {
+		return partAmediumquestionsmarks;
+	}
+	public void setPartAmediumquestionsmarks(double partAmediumquestionsmarks) {
+		this.partAmediumquestionsmarks = partAmediumquestionsmarks;
+	}
+	public double getPartAhardquestionsmarks() {
+		return partAhardquestionsmarks;
+	}
+	public void setPartAhardquestionsmarks(double partAhardquestionsmarks) {
+		this.partAhardquestionsmarks = partAhardquestionsmarks;
+	}
+	public double getPartBeasyquestionsmarks() {
+		return partBeasyquestionsmarks;
+	}
+	public void setPartBeasyquestionsmarks(double partBeasyquestionsmarks) {
+		this.partBeasyquestionsmarks = partBeasyquestionsmarks;
+	}
+	public double getPartBmediumquestionsmarks() {
+		return partBmediumquestionsmarks;
+	}
+	public void setPartBmediumquestionsmarks(double partBmediumquestionsmarks) {
+		this.partBmediumquestionsmarks = partBmediumquestionsmarks;
+	}
+	public double getPartBhardquestionsmarks() {
+		return partBhardquestionsmarks;
+	}
+	public void setPartBhardquestionsmarks(double partBhardquestionsmarks) {
+		this.partBhardquestionsmarks = partBhardquestionsmarks;
+	}
+	public double getPartCeasyquestionsmarks() {
+		return partCeasyquestionsmarks;
+	}
+	public void setPartCeasyquestionsmarks(double partCeasyquestionsmarks) {
+		this.partCeasyquestionsmarks = partCeasyquestionsmarks;
+	}
+	public double getPartCmediumquestionsmarks() {
+		return partCmediumquestionsmarks;
+	}
+	public void setPartCmediumquestionsmarks(double partCmediumquestionsmarks) {
+		this.partCmediumquestionsmarks = partCmediumquestionsmarks;
+	}
+	public double getPartChardquestionsmarks() {
+		return partChardquestionsmarks;
+	}
+	public void setPartChardquestionsmarks(double partChardquestionsmarks) {
+		this.partChardquestionsmarks = partChardquestionsmarks;
+	}
+	public double getPartDeasyquestionsmarks() {
+		return partDeasyquestionsmarks;
+	}
+	public void setPartDeasyquestionsmarks(double partDeasyquestionsmarks) {
+		this.partDeasyquestionsmarks = partDeasyquestionsmarks;
+	}
+	public double getPartDmediumquestionsmarks() {
+		return partDmediumquestionsmarks;
+	}
+	public void setPartDmediumquestionsmarks(double partDmediumquestionsmarks) {
+		this.partDmediumquestionsmarks = partDmediumquestionsmarks;
+	}
+	public double getPartDhardquestionsmarks() {
+		return partDhardquestionsmarks;
+	}
+	public void setPartDhardquestionsmarks(double partDhardquestionsmarks) {
+		this.partDhardquestionsmarks = partDhardquestionsmarks;
+	}
+	
+	public double getTotalpartAmarks() {
+		return totalpartAmarks;
+	}
+	public void setTotalpartAmarks(double totalpartAmarks) {
+		this.totalpartAmarks = totalpartAmarks;
+	}
+	public double getTotalpartBmarks() {
+		return totalpartBmarks;
+	}
+	public void setTotalpartBmarks(double totalpartBmarks) {
+		this.totalpartBmarks = totalpartBmarks;
+	}
+	public double getTotalpartCmarks() {
+		return totalpartCmarks;
+	}
+	public void setTotalpartCmarks(double totalpartCmarks) {
+		this.totalpartCmarks = totalpartCmarks;
+	}
+	public double getTotalpartDmarks() {
+		return totalpartDmarks;
+	}
+	public void setTotalpartDmarks(double totalpartDmarks) {
+		this.totalpartDmarks = totalpartDmarks;
+	}
+	public void setTotalpartDmarks(int totalpartDmarks) {
+		this.totalpartDmarks = totalpartDmarks;
+	}
 	private String question1;
 	private String question2;
 	private String question3;
@@ -109,6 +225,34 @@ public class questionpaperbean
 	private String question16;
 	private String question17;
 	private String question18;
+	private String question19;
+	private String question20;
+	private String coursename;
+	private String coursecode;
+	public String getCoursename() {
+		return coursename;
+	}
+	public void setCoursename(String coursename) {
+		this.coursename = coursename;
+	}
+	public String getCoursecode() {
+		return coursecode;
+	}
+	public void setCoursecode(String coursecode) {
+		this.coursecode = coursecode;
+	}
+	public String getQuestion19() {
+		return question19;
+	}
+	public void setQuestion19(String question19) {
+		this.question19 = question19;
+	}
+	public String getQuestion20() {
+		return question20;
+	}
+	public void setQuestion20(String question20) {
+		this.question20 = question20;
+	}
 	public int getPaperid() {
 		return paperid;
 	}

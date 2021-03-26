@@ -9,13 +9,6 @@ public class neweasyquestionbean
 	private int questionnumber;
 	private String questiondescription;
 	private String difficultylevel;
-	private int marks;
-	public int getMarks() {
-		return marks;
-	}
-	public void setMarks(int marks) {
-		this.marks = marks;
-	}
 	public int getQuestionnumber() {
 		return questionnumber;
 	}

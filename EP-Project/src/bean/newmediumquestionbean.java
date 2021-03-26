@@ -10,17 +10,10 @@ public class newmediumquestionbean
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int questionnumber;
-	private int marks;
 	private String questiondescription;
 	private String difficultylevel;
 	public int getQuestionnumber() {
 		return questionnumber;
-	}
-	public int getMarks() {
-		return marks;
-	}
-	public void setMarks(int marks) {
-		this.marks = marks;
 	}
 	public void setQuestionnumber(int questionnumber) {
 		this.questionnumber = questionnumber;

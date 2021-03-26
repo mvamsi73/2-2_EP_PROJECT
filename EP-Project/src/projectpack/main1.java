@@ -6,7 +6,8 @@ public class main1 {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException 
 	{
 		CRUD cd=new CRUD();
-		cd.getquestions();
+//		System.out.println(cd.easyquestionssize());
+		cd.emptyproject();
 	}
 
 }

@@ -1,8 +1,6 @@
 package projectpack;
 import java.sql.*;
-import java.util.List;
-import java.util.Random;
-
+import java.util.*;
 import bean.*;
 import org.hibernate.Query;
 public class CRUD 
@@ -51,12 +49,13 @@ public class CRUD
 		}		
 		return false;
 	}
-	public String getName(ProjectLogInBean lb)
+	public String getfacultyName(int id)
 	{
 		config con=new config();
-		String st="select name from ProjectSignUpBean where id="+String.valueOf(lb.getId());
-		Query q=con.session.createQuery(st);
+		Query q=con.session.createQuery("select name from ProjectSignUpBean where id=:id");
+		q.setParameter("id", id);
 		String name=(String) q.uniqueResult();
+		System.out.println(name+" "+id);
 		con.session.close();
 		con.sf.close();
 		return name;
@@ -70,9 +69,13 @@ public class CRUD
 		{
 			if(i.getId()==ab.getId() && i.getPassword().equals(ab.getPassword()))
 			{
+				con.session.close();
+				con.sf.close();
 				return true;
 			}
 		}
+		con.session.close();
+		con.sf.close();
 		return false;
 	}
 	public List<ProjectSignUpBean> getdetailsbyid(int id)
@@ -109,6 +112,8 @@ public class CRUD
 		Query q=con.session.createQuery("delete from ProjectSignUpBean where id=:key");
 		q.setParameter("key", key);
 		int i=q.executeUpdate();
+		con.session.close();
+		con.sf.close();
 		return i;
 	}
 	public int insertsemester(semesterbean sb)
@@ -170,6 +175,8 @@ public class CRUD
 		config con=new config();
 		Query q=con.session.createQuery("from neweasyquestionbean");
 		List<neweasyquestionbean> easy=q.list();
+		con.session.close();
+		con.sf.close();
 		return easy;
 	}
 	public List<newmediumquestionbean> getmediumquestions()
@@ -177,6 +184,8 @@ public class CRUD
 		config con=new config();
 		Query q=con.session.createQuery("from newmediumquestionbean");
 		List<newmediumquestionbean> medium=q.list();
+		con.session.close();
+		con.sf.close();
 		return medium;
 	}
 	public List<newhardquestionbean> gethardquestions()
@@ -184,11 +193,113 @@ public class CRUD
 		config con=new config();
 		Query q=con.session.createQuery("from newhardquestionbean");
 		List<newhardquestionbean> hard=q.list();
+		con.session.close();
+		con.sf.close();
 		return hard;
 	}
-	public void getquestions()
+	public ArrayList<Integer> getquestionslist(int size)
 	{
-		Random r=new Random(6);
-			System.out.println(r.nextLong());
+		ArrayList<Integer> randomlst=new ArrayList<Integer>();
+		for(int i=1;i<=size;i++)
+		{
+			randomlst.add(i);
+		}
+		Collections.shuffle(randomlst);
+		return randomlst;
+	}
+	public void emptyproject()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("delete from branchbean");
+		q.executeUpdate();
+		Query q1=con.session.createQuery("delete from coursebean");
+		q1.executeUpdate();
+		Query q2=con.session.createQuery("delete from semesterbean");
+		q2.executeUpdate();
+		System.out.println("Tables Cleared");
+		con.session.close();
+		con.sf.close();
+	}
+	public int easyquestionssize()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("select max(questionnumber) from neweasyquestionbean");
+		int size=(Integer) q.uniqueResult();
+		con.session.close();
+		con.sf.close();
+		return size;
+	}
+	public int mediumquestionssize()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("select max(questionnumber) from newmediumquestionbean");
+		int size=(Integer) q.uniqueResult();
+		con.session.close();
+		con.sf.close();
+		return size;
+	}
+	public int hardquestionssize()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("select max(questionnumber) from newhardquestionbean");
+		int size=(Integer) q.uniqueResult();
+		con.session.close();
+		con.sf.close();
+		return size;
+	}
+	public List<neweasyquestionbean> geteasyquestiondescription(int qnnum)
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from neweasyquestionbean where questionnumber=:qnnum");
+		q.setParameter("qnnum", qnnum);
+		List<neweasyquestionbean> lst=q.list();
+		con.session.close();
+		con.sf.close();
+		return lst;
+	}
+	public List<newmediumquestionbean> getmediumquestiondescription(int qnnum)
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from newmediumquestionbean where questionnumber=:qnnum");
+		q.setParameter("qnnum", qnnum);
+		List<newmediumquestionbean> lst=q.list();
+		con.session.close();
+		con.sf.close();
+		return lst;
+	}
+	public List<newhardquestionbean> gethardquestiondescription(int qnnum)
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from newhardquestionbean where questionnumber=:qnnum");
+		q.setParameter("qnnum", qnnum);
+		List<newhardquestionbean> lst=q.list();
+		con.session.close();
+		con.sf.close();
+		return lst;
+	}
+	public int insertnewqpaper(questionpaperbean qb)
+	{
+		config con=new config();
+		int i=Integer.parseInt(String.valueOf(con.session.save(qb)));
+		con.t.commit();
+		con.session.close();
+		con.sf.close();
+		return i;
+	}
+	public List<questionpaperbean> getgeneratedpapersbyfacid(int id)
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from questionpaperbean where generatorid=:id");
+		q.setParameter("id", id);
+		List<questionpaperbean> data=q.list();
+		return data;
+	}
+	public List<questionpaperbean> getgeneratedpaperspaperid(int id)
+	{
+		config con=new config();
+		Query q=con.session.createQuery("from questionpaperbean where paperid=:id");
+		q.setParameter("id", id);
+		List<questionpaperbean> data=q.list();
+		return data;
 	}
 }
