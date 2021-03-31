@@ -46,7 +46,7 @@ public class SignUp extends HttpServlet {
 			else
 			{
 				PrintWriter pw=response.getWriter();
-				RequestDispatcher rd=request.getRequestDispatcher("signup.html");
+				RequestDispatcher rd=request.getRequestDispatcher("signup.jsp");
 				rd.include(request, response);
 				pw.print("<p align=center style=\"color:white\">The ID or Email is already taken, Please Register with another credentials</p>");
 			}

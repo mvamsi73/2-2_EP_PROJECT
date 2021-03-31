@@ -302,4 +302,11 @@ public class CRUD
 		List<questionpaperbean> data=q.list();
 		return data;
 	}
+	public String getpaperid()
+	{
+		config con=new config();
+		Query q=con.session.createQuery("select max(paperid) from semesterbean");
+		String paperid=String.valueOf(q.uniqueResult());
+		return paperid;
+	}
 }

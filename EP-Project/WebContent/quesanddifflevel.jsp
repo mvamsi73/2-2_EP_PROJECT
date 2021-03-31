@@ -1,9 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/982d9630c6.js" crossorigin="anonymous"></script>
+
+  <!-- Google Font Root Link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
 <title>Difficulty level</title>
 <script type="text/javascript">
 function validate()
@@ -176,10 +189,31 @@ alert("Marks to Hard-Level questions in PartD should not be Null");
 document.f1.hardDmarks.focus();
 return false;
 }
-if((parseInt(easyA)*parseInt(easyAmarks)+parseInt(mediumA)*parseInt(mediumAmarks)+parseInt(hardA)*parseInt(hardAmarks)+parseInt(easyB)*parseInt(easyBmarks)+parseInt(mediumB)*parseInt(mediumBmarks)+parseInt(hardB)*parseInt(hardBmarks)+parseInt(easyC)*parseInt(easyCmarks)+parseInt(mediumC)*parseInt(mediumCmarks)+parseInt(hardC)*parseInt(hardCmarks)+parseInt(easyD)*parseInt(easyDmarks)+parseInt(mediumD)*parseInt(mediumDmarks)+parseInt(hardD)*parseInt(hardDmarks))==100)
+if(parseInt(easyA)+parseInt(mediumA)+parseInt(hardA)!=5)
+	{
+	alert("Number of Questions in partA must be 5");
+	return false;
+	}
+else if(parseInt(easyB)+parseInt(mediumB)+parseInt(hardB)!=5)
+{
+	alert("Number of Questions in partB must be 5");
+	return false;
+}
+else if(parseInt(easyC)+parseInt(mediumC)+parseInt(hardC)!=5)
+{
+	alert("Number of Questions in partC must be 5");
+	return false;
+}
+else if(parseInt(easyD)+parseInt(mediumD)+parseInt(hardD)!=5)
+{
+	alert("Number of Questions in partC must be 5");
+	return false;
+}
+if((parseFloat(easyA)*parseFloat(easyAmarks)+parseFloat(mediumA)*parseFloat(mediumAmarks)+parseFloat(hardA)*parseFloat(hardAmarks)+parseFloat(easyB)*parseFloat(easyBmarks)+parseFloat(mediumB)*parseFloat(mediumBmarks)+parseFloat(hardB)*parseFloat(hardBmarks)+parseFloat(easyC)*parseFloat(easyCmarks)+parseFloat(mediumC)*parseFloat(mediumCmarks)+parseFloat(hardC)*parseFloat(hardCmarks)+parseFloat(easyD)*parseFloat(easyDmarks)+parseFloat(mediumD)*parseFloat(mediumDmarks)+parseFloat(hardD)*parseFloat(hardDmarks))==100)
 	{
 	document.getElementById("validatepaper").disabled = true;
 	document.getElementById("generate").disabled = false;
+	
 	alert("Validation Successful\nTotal Marks = 100");
 	return false;
 	}
@@ -188,7 +222,7 @@ else
 	document.getElementById("validatepaper").disabled = false;
 	document.getElementById("generate").disabled = true;
 	alert("Validation Failed");
-	alert("Your paper total marks = "+(parseInt(easyA)*parseInt(easyAmarks)+parseInt(mediumA)*parseInt(mediumAmarks)+parseInt(hardA)*parseInt(hardAmarks)+parseInt(easyB)*parseInt(easyBmarks)+parseInt(mediumB)*parseInt(mediumBmarks)+parseInt(hardB)*parseInt(hardBmarks)+parseInt(easyC)*parseInt(easyCmarks)+parseInt(mediumC)*parseInt(mediumCmarks)+parseInt(hardC)*parseInt(hardCmarks)+parseInt(easyD)*parseInt(easyDmarks)+parseInt(mediumD)*parseInt(mediumDmarks)+parseInt(hardD)*parseInt(hardDmarks)));
+	alert("Your paper total marks = "+(parseFloat(easyA)*parseFloat(easyAmarks)+parseFloat(mediumA)*parseFloat(mediumAmarks)+parseFloat(hardA)*parseFloat(hardAmarks)+parseFloat(easyB)*parseFloat(easyBmarks)+parseFloat(mediumB)*parseFloat(mediumBmarks)+parseFloat(hardB)*parseFloat(hardBmarks)+parseFloat(easyC)*parseFloat(easyCmarks)+parseFloat(mediumC)*parseFloat(mediumCmarks)+parseFloat(hardC)*parseFloat(hardCmarks)+parseFloat(easyD)*parseFloat(easyDmarks)+parseFloat(mediumD)*parseFloat(mediumDmarks)+parseFloat(hardD)*parseFloat(hardDmarks)));
 	alert("Ensure total marks of your paper is equal to 100");
 	return false;
 	}
@@ -219,7 +253,27 @@ function generatepaper()
 	var easyDmarks=document.f1.easyDmarks.value;
 	var mediumDmarks=document.f1.mediumDmarks.value;
 	var hardDmarks=document.f1.hardDmarks.value;
-	if((parseInt(easyA)*parseInt(easyAmarks)+parseInt(mediumA)*parseInt(mediumAmarks)+parseInt(hardA)*parseInt(hardAmarks)+parseInt(easyB)*parseInt(easyBmarks)+parseInt(mediumB)*parseInt(mediumBmarks)+parseInt(hardB)*parseInt(hardBmarks)+parseInt(easyC)*parseInt(easyCmarks)+parseInt(mediumC)*parseInt(mediumCmarks)+parseInt(hardC)*parseInt(hardCmarks)+parseInt(easyD)*parseInt(easyDmarks)+parseInt(mediumD)*parseInt(mediumDmarks)+parseInt(hardD)*parseInt(hardDmarks))==100)
+	if(parseInt(easyA)+parseInt(mediumA)+parseInt(hardA)!=5)
+	{
+	alert("Number of Questions in partA must be 5");
+	return false;
+	}
+else if(parseInt(easyB)+parseInt(mediumB)+parseInt(hardB)!=5)
+{
+	alert("Number of Questions in partB must be 5");
+	return false;
+}
+else if(parseInt(easyC)+parseInt(mediumC)+parseInt(hardC)!=5)
+{
+	alert("Number of Questions in partC must be 5");
+	return false;
+}
+else if(parseInt(easyD)+parseInt(mediumD)+parseInt(hardD)!=5)
+{
+	alert("Number of Questions in partC must be 5");
+	return false;
+}
+	if((parseFloat(easyA)*parseFloat(easyAmarks)+parseFloat(mediumA)*parseFloat(mediumAmarks)+parseFloat(hardA)*parseFloat(hardAmarks)+parseFloat(easyB)*parseFloat(easyBmarks)+parseFloat(mediumB)*parseFloat(mediumBmarks)+parseFloat(hardB)*parseFloat(hardBmarks)+parseFloat(easyC)*parseFloat(easyCmarks)+parseFloat(mediumC)*parseFloat(mediumCmarks)+parseFloat(hardC)*parseFloat(hardCmarks)+parseFloat(easyD)*parseFloat(easyDmarks)+parseFloat(mediumD)*parseFloat(mediumDmarks)+parseFloat(hardD)*parseFloat(hardDmarks))==100)
 	{
 	return true;
 	}
@@ -228,17 +282,90 @@ else
 	document.getElementById("validatepaper").disabled = false;
 	document.getElementById("generate").disabled = true;
 	alert("Validation Failed");
-	alert("Your paper total marks = "+(parseInt(easyA)*parseInt(easyAmarks)+parseInt(mediumA)*parseInt(mediumAmarks)+parseInt(hardA)*parseInt(hardAmarks)+parseInt(easyB)*parseInt(easyBmarks)+parseInt(mediumB)*parseInt(mediumBmarks)+parseInt(hardB)*parseInt(hardBmarks)+parseInt(easyC)*parseInt(easyCmarks)+parseInt(mediumC)*parseInt(mediumCmarks)+parseInt(hardC)*parseInt(hardCmarks)+parseInt(easyD)*parseInt(easyDmarks)+parseInt(mediumD)*parseInt(mediumDmarks)+parseInt(hardD)*parseInt(hardDmarks)));
+	alert("Your paper total marks = "+(parseFloat(easyA)*parseFloat(easyAmarks)+parseFloat(mediumA)*parseFloat(mediumAmarks)+parseFloat(hardA)*parseFloat(hardAmarks)+parseFloat(easyB)*parseFloat(easyBmarks)+parseFloat(mediumB)*parseFloat(mediumBmarks)+parseFloat(hardB)*parseFloat(hardBmarks)+parseFloat(easyC)*parseFloat(easyCmarks)+parseFloat(mediumC)*parseFloat(mediumCmarks)+parseFloat(hardC)*parseFloat(hardCmarks)+parseFloat(easyD)*parseFloat(easyDmarks)+parseFloat(mediumD)*parseFloat(mediumDmarks)+parseFloat(hardD)*parseFloat(hardDmarks)));
 	alert("Ensure total marks of your paper is equal to 100");
 	return false;
 	}
 }
 </script>
+<style>
+
+  /* Styles for Navbar */
+  .bg-light {
+    background-color: #ffffff!important;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  }
+  .nav_bar_title {
+    font-size: 25px;
+  }
+
+  @media (max-width: 768px) {
+    .nav_bar_title {
+      font-size: 20px;
+    }
+  }
+   .login_button {
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      font-family: 'Raleway', sans-serif;
+  }
+  input[type=button] {
+  background-color: #33b5e5;
+  border: none;
+  border-radius:5px;
+  font-weight:700;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+  input[type=submit] {
+  background-color: #54d371f5;
+  color: white;
+  border: none;
+  border-radius:5px;
+  font-weight:700;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+  input[type=submit]:disabled,
+  input[type=submit][disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+td {
+padding:20px;
+}
+
+table {
+border-radius:15px;
+}
+</style>
 </head>
 <body>
-<a href="./logout" style="text-decoration: none; color: black ;float:right;">Logout</a>
+
+  <nav class="navbar sticky-top navbar-light bg-light" style="padding: 18px;">
+        <div class="navbar-brand">
+            <span style="font-weight: 500; font-family: 'Cabin', sans-serif; display: flex; color: #3c4043;" class="nav_bar_title">
+                IWe - Make Task Easy
+            </span>
+        </div>
+        <div>
+             <a href="welcome.html" style="color: white; background-color: #007bff; text-decoration: none;" class="login_button"><b>Home</b></a>
+            <a href="./logout" style="color: white; background-color: #7e57c2; text-decoration: none;" class="login_button"><b>Logout</b></a>
+        </div>
+    </nav>
+    
+<div style="background-color: white; padding-top:5%; padding-bottom:5%; padding-right: 5%; padding-left: 5%;">
 <form name="f1" action="setquestionpaperbeanvalues_stage1" method="post" onsubmit="return generatepaper()">
-<table align="center">
+<table align="center" style="background-color:white; box-shadow: 0 20px 40px 20px rgb(0 0 0 / 25%); padding:10%;">
 <tr><td><h1>PART-A</h1></td></tr>
 <tr><td>Enter Number of Easy-Level Questions in Part-A:</td><td><input type="number" name="easyA"></td><td>Marks:</td><td><input type="number" step="0.01" name="easyAmarks"></td></tr>
 <tr><td>Enter Number of Medium-Level Questions in Part-A:</td><td><input type="number" name="mediumA"  ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumAmarks"></td></tr>
@@ -256,9 +383,10 @@ else
 <tr><td>Enter Number of Medium-Level Questions in Part-D:</td><td><input type="number" name="mediumD"  ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumDmarks"></td></tr>
 <tr><td>Enter Number of Hard-Level Questions in Part-D:</td><td><input type="number" name="hardD" ></td><td>Marks:</td><td><input type="number" step="0.01" name="hardDmarks"></td></tr>
 <tr><td><input type="hidden" name="paperid" value="<%=request.getAttribute("paperid") %>"></td></td></tr>
-<tr><td><input id="validatepaper" type="button" value="Validate Paper" onclick="return validate()"></td></tr>
-<tr><td><input id="generate" type="submit" value="Generate paper" disabled></td></tr>
+<tr><td><input id="validatepaper" type="button" value="Validate Paper" onclick="return validate()">&nbsp;&nbsp;&nbsp;&nbsp;<input id="generate" type="submit" value="Generate paper" disabled></td></tr>
 </table>
 </form>
+</div>
+
 </body>
 </html>
