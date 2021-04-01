@@ -25,13 +25,33 @@ public class signinwelcome extends HttpServlet {
 		int id= (Integer) ( ht.getAttribute("id"));
 		if(id!=0)
 		{
-		ProjectLogInBean sb=(ProjectLogInBean) request.getAttribute("ProjectLogInBean");
 		CRUD cd =new CRUD();
 			
 				PrintWriter pw=response.getWriter();
 				RequestDispatcher rd=request.getRequestDispatcher("welcome.html");
 				rd.include(request, response);
-				pw.print("Welcome "+cd.getName(sb)+"<br>Your SignIn is Successful");
+				pw.print("<html>"
+						+ "<head>"
+						+ "<meta charset=\"UTF-8\">"
+						+ "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"
+						+ "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+						+ "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">"
+						+ "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">"
+						+ "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>"
+						+ "<style>"
+						+ ".starter-template { padding: 3rem 1.5rem; text-align: center; }"
+						+ "</style>"
+						+ "</head>"
+						+ "<body>"
+						+ "<main role=\"main\" class=\"container\">"
+						+ "<div class=\"starter-template\">"
+						+ "<h1>Welcome "
+						+ ""+cd.getfacultyName(id)+"<br>Your SignIn is Successfull!"
+						+ "</h1>"
+						+ "</div>"
+						+ "</main>"
+						+ "</body>"
+						+ "</html>");
 		
 		}
 		else

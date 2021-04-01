@@ -28,11 +28,10 @@ public class signupwelcome extends HttpServlet {
 	{
 		ProjectSignUpBean sb= (ProjectSignUpBean) request.getAttribute("ProjectSignUpBean");
 		PrintWriter pw=response.getWriter();
-		RequestDispatcher rd=request.getRequestDispatcher("welcome.html");
+		RequestDispatcher rd=request.getRequestDispatcher("adminhome.jsp");
 		rd.include(request, response);
-		pw.print("New Account added with ID:"+sb.getId());
-		pw.print("<br><button ><a href=\"adminhome.jsp\" style=\"text-decoration: none; color: black;\">Go to Home</a></button>\r\n" + 
-				"");
+		pw.print("<p align='center' style='color:white'>New Account added with ID:"+sb.getId()+"</p>");
+		
 	}
 
 }
