@@ -36,13 +36,13 @@ public class deleteaccount extends HttpServlet {
 		{
 			RequestDispatcher rd=request.getRequestDispatcher("deleteaccount.jsp");
 			rd.include(request, response);
-			pw.print("<br><h1 align='center'>Deletion of id "+String.valueOf(key)+" is Successful<h1>");
+			pw.print("<br><h1 align='center'>Deletion of ID "+String.valueOf(key)+" is Successfull!<h1>");
 		}
 		else
 		{
 			RequestDispatcher rd=request.getRequestDispatcher("deleteaccount.jsp");
 			rd.include(request, response);
-			pw.print("<h1 align='center'>Deletion of id "+String.valueOf(key)+" is Failed<h1>");
+			pw.print("<h1 align='center'>Deletion of ID "+String.valueOf(key)+" is Failed!<h1>");
 		}
 		
 	}
