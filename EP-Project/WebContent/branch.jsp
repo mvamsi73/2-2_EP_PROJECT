@@ -62,7 +62,6 @@ function validate()
 	body {
 		margin: 0;
 		padding: 0;
-		background-image: url("login.webp");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: #ffffff;

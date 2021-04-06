@@ -136,8 +136,7 @@
             <div class="card" onclick="document.location='viewaccountdetails.jsp'">
               <h3><span style="font-size: 100px; color: #4285f4" class="material-icons"> account_box </span></h3>
               <p style="font-family: 'Fredericka the Great', cursive; font-weight: 600; font-size: 20px; letter-spacing: 0.08em;">View Accounts Details</p>
-              <p style="font-family: 'Short Stack', cursive;">We help you in finding the session (online classes). You can pick it easily. 
-                  As we provided detail information regarding every session.</p>
+              
             </div>
         </div>
 
@@ -145,8 +144,7 @@
             <div class="card" onclick="document.location='signup.jsp'">
               <h3><span style="font-size: 100px; color: #F1615C;" class="material-icons"> person_add </span></h3>
               <p style="font-family: 'Fredericka the Great', cursive; font-weight: 600; font-size: 20px; letter-spacing: 0.08em;">Add New Account</p>
-              <p style="font-family: 'Short Stack', cursive;">Know what is going on...! Ah! We provide you info. regarding online competitve challenges, 
-                  Massive Open Online Courses (MOOCS), etc.</p>
+              
             </div>
         </div>
 
@@ -154,8 +152,7 @@
             <div class="card" onclick="document.location='updateaccount.jsp'">
                 <h3><span style="font-size: 100px; color: #fcc834;" class="material-icons"> person </span></h3>
                 <p style="font-family: 'Fredericka the Great', cursive; font-weight: 600; font-size: 20px; letter-spacing: 0.08em;">Update Account Details</p>
-                <p style="font-family: 'Short Stack', cursive;">You can Write the Exams online. You can Submit your assignments from where you are with 
-                  your smart device. And also the faculty will evaluate them.</p>
+                
             </div>
          </div>
 
@@ -163,8 +160,7 @@
             <div class="card" onclick="document.location='deleteaccount.jsp'">
               <h3><span style="font-size: 100px; color: #616161;" class="material-icons"> person_remove </span></h3>
               <p style="font-family: 'Fredericka the Great', cursive; font-weight: 600; font-size: 20px; letter-spacing: 0.08em;">Delete Account</p>
-              <p style="font-family: 'Short Stack', cursive;">Get Complete Information of course registration details of which you(student) registered. And also
-              	  mode of study for that courses.</p>
+              
             </div>
         </div>
         
@@ -172,8 +168,7 @@
             <div class="card" onclick="document.location='addnewquestion.jsp'">
               <h3><span style="font-size: 100px; color: #76e989;" class="material-icons"> add_comment </span></h3>
               <p style="font-family: 'Fredericka the Great', cursive; font-weight: 600; font-size: 20px; letter-spacing: 0.08em;">Add New Question</p>
-              <p style="font-family: 'Short Stack', cursive;">Get Complete Information of course registration details of which you(student) registered. And also
-              	  mode of study for that courses.</p>
+              
             </div>
         </div>
         
@@ -181,8 +176,7 @@
             <div class="card" onclick="document.location='viewquestions.jsp'">
               <h3><span style="font-size: 100px; color: #5c6bc0;" class="material-icons"> comment </span></h3>
               <p style="font-family: 'Fredericka the Great', cursive; font-weight: 600; font-size: 20px; letter-spacing: 0.08em;">View All Questions</p>
-              <p style="font-family: 'Short Stack', cursive;">Get Complete Information of course registration details of which you(student) registered. And also
-              	  mode of study for that courses.</p>
+              
             </div>
         </div>
                 

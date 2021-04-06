@@ -229,6 +229,286 @@ public class questionpaperbean
 	private String question20;
 	private String coursename;
 	private String coursecode;
+	private double question1marks;
+	private double question2marks;
+	private double question3marks;
+	private double question4marks;
+	private double question5marks;
+	private double question6marks;
+	private double question7marks;
+	private double question8marks;
+	private double question9marks;
+	private double question10marks;
+	private double question11marks;
+	private double question12marks;
+	private double question13marks;
+	private double question14marks;
+	private double question15marks;
+	private double question16marks;
+	private double question17marks;
+	private double question18marks;
+	private double question19marks;
+	private double question20marks;
+	public double getQuestion1marks() {
+		return question1marks;
+	}
+	public void setQuestion1marks(double question1marks) {
+		this.question1marks = question1marks;
+	}
+	public double getQuestion2marks() {
+		return question2marks;
+	}
+	public void setQuestion2marks(double question2marks) {
+		this.question2marks = question2marks;
+	}
+	public double getQuestion3marks() {
+		return question3marks;
+	}
+	public void setQuestion3marks(double question3marks) {
+		this.question3marks = question3marks;
+	}
+	public double getQuestion4marks() {
+		return question4marks;
+	}
+	public void setQuestion4marks(double question4marks) {
+		this.question4marks = question4marks;
+	}
+	public double getQuestion5marks() {
+		return question5marks;
+	}
+	public void setQuestion5marks(double question5marks) {
+		this.question5marks = question5marks;
+	}
+	public double getQuestion6marks() {
+		return question6marks;
+	}
+	public void setQuestion6marks(double question6marks) {
+		this.question6marks = question6marks;
+	}
+	public double getQuestion7marks() {
+		return question7marks;
+	}
+	public void setQuestion7marks(double question7marks) {
+		this.question7marks = question7marks;
+	}
+	public double getQuestion8marks() {
+		return question8marks;
+	}
+	public void setQuestion8marks(double question8marks) {
+		this.question8marks = question8marks;
+	}
+	public double getQuestion9marks() {
+		return question9marks;
+	}
+	public void setQuestion9marks(double question9marks) {
+		this.question9marks = question9marks;
+	}
+	public double getQuestion10marks() {
+		return question10marks;
+	}
+	public void setQuestion10marks(double question10marks) {
+		this.question10marks = question10marks;
+	}
+	public double getQuestion11marks() {
+		return question11marks;
+	}
+	public void setQuestion11marks(double question11marks) {
+		this.question11marks = question11marks;
+	}
+	public double getQuestion12marks() {
+		return question12marks;
+	}
+	public void setQuestion12marks(double question12marks) {
+		this.question12marks = question12marks;
+	}
+	public double getQuestion13marks() {
+		return question13marks;
+	}
+	public void setQuestion13marks(double question13marks) {
+		this.question13marks = question13marks;
+	}
+	public double getQuestion14marks() {
+		return question14marks;
+	}
+	public void setQuestion14marks(double question14marks) {
+		this.question14marks = question14marks;
+	}
+	public double getQuestion15marks() {
+		return question15marks;
+	}
+	public void setQuestion15marks(double question15marks) {
+		this.question15marks = question15marks;
+	}
+	public double getQuestion16marks() {
+		return question16marks;
+	}
+	public void setQuestion16marks(double question16marks) {
+		this.question16marks = question16marks;
+	}
+	public double getQuestion17marks() {
+		return question17marks;
+	}
+	public void setQuestion17marks(double question17marks) {
+		this.question17marks = question17marks;
+	}
+	public double getQuestion18marks() {
+		return question18marks;
+	}
+	public void setQuestion18marks(double question18marks) {
+		this.question18marks = question18marks;
+	}
+	public double getQuestion19marks() {
+		return question19marks;
+	}
+	public void setQuestion19marks(double question19marks) {
+		this.question19marks = question19marks;
+	}
+	public double getQuestion20marks() {
+		return question20marks;
+	}
+	public void setQuestion20marks(double question20marks) {
+		this.question20marks = question20marks;
+	}
+	public String getQuestion1difficultylevel() {
+		return question1difficultylevel;
+	}
+	public void setQuestion1difficultylevel(String question1difficultylevel) {
+		this.question1difficultylevel = question1difficultylevel;
+	}
+	public String getQuestion2difficultylevel() {
+		return question2difficultylevel;
+	}
+	public void setQuestion2difficultylevel(String question2difficultylevel) {
+		this.question2difficultylevel = question2difficultylevel;
+	}
+	public String getQuestion3difficultylevel() {
+		return question3difficultylevel;
+	}
+	public void setQuestion3difficultylevel(String question3difficultylevel) {
+		this.question3difficultylevel = question3difficultylevel;
+	}
+	public String getQuestion4difficultylevel() {
+		return question4difficultylevel;
+	}
+	public void setQuestion4difficultylevel(String question4difficultylevel) {
+		this.question4difficultylevel = question4difficultylevel;
+	}
+	public String getQuestion5difficultylevel() {
+		return question5difficultylevel;
+	}
+	public void setQuestion5difficultylevel(String question5difficultylevel) {
+		this.question5difficultylevel = question5difficultylevel;
+	}
+	public String getQuestion6difficultylevel() {
+		return question6difficultylevel;
+	}
+	public void setQuestion6difficultylevel(String question6difficultylevel) {
+		this.question6difficultylevel = question6difficultylevel;
+	}
+	public String getQuestion7difficultylevel() {
+		return question7difficultylevel;
+	}
+	public void setQuestion7difficultylevel(String question7difficultylevel) {
+		this.question7difficultylevel = question7difficultylevel;
+	}
+	public String getQuestion8difficultylevel() {
+		return question8difficultylevel;
+	}
+	public void setQuestion8difficultylevel(String question8difficultylevel) {
+		this.question8difficultylevel = question8difficultylevel;
+	}
+	public String getQuestion9difficultylevel() {
+		return question9difficultylevel;
+	}
+	public void setQuestion9difficultylevel(String question9difficultylevel) {
+		this.question9difficultylevel = question9difficultylevel;
+	}
+	public String getQuestion10difficultylevel() {
+		return question10difficultylevel;
+	}
+	public void setQuestion10difficultylevel(String question10difficultylevel) {
+		this.question10difficultylevel = question10difficultylevel;
+	}
+	public String getQuestion11difficultylevel() {
+		return question11difficultylevel;
+	}
+	public void setQuestion11difficultylevel(String question11difficultylevel) {
+		this.question11difficultylevel = question11difficultylevel;
+	}
+	public String getQuestion12difficultylevel() {
+		return question12difficultylevel;
+	}
+	public void setQuestion12difficultylevel(String question12difficultylevel) {
+		this.question12difficultylevel = question12difficultylevel;
+	}
+	public String getQuestion13difficultylevel() {
+		return question13difficultylevel;
+	}
+	public void setQuestion13difficultylevel(String question13difficultylevel) {
+		this.question13difficultylevel = question13difficultylevel;
+	}
+	public String getQuestion14difficultylevel() {
+		return question14difficultylevel;
+	}
+	public void setQuestion14difficultylevel(String question14difficultylevel) {
+		this.question14difficultylevel = question14difficultylevel;
+	}
+	public String getQuestion15difficultylevel() {
+		return question15difficultylevel;
+	}
+	public void setQuestion15difficultylevel(String question15difficultylevel) {
+		this.question15difficultylevel = question15difficultylevel;
+	}
+	public String getQuestion16difficultylevel() {
+		return question16difficultylevel;
+	}
+	public void setQuestion16difficultylevel(String question16difficultylevel) {
+		this.question16difficultylevel = question16difficultylevel;
+	}
+	public String getQuestion17difficultylevel() {
+		return question17difficultylevel;
+	}
+	public void setQuestion17difficultylevel(String question17difficultylevel) {
+		this.question17difficultylevel = question17difficultylevel;
+	}
+	public String getQuestion18difficultylevel() {
+		return question18difficultylevel;
+	}
+	public void setQuestion18difficultylevel(String question18difficultylevel) {
+		this.question18difficultylevel = question18difficultylevel;
+	}
+	public String getQuestion19difficultylevel() {
+		return question19difficultylevel;
+	}
+	public void setQuestion19difficultylevel(String question19difficultylevel) {
+		this.question19difficultylevel = question19difficultylevel;
+	}
+	public String getQuestion20difficultylevel() {
+		return question20difficultylevel;
+	}
+	public void setQuestion20difficultylevel(String question20difficultylevel) {
+		this.question20difficultylevel = question20difficultylevel;
+	}
+	private String question1difficultylevel;
+	private String question2difficultylevel;
+	private String question3difficultylevel;
+	private String question4difficultylevel;
+	private String question5difficultylevel;
+	private String question6difficultylevel;
+	private String question7difficultylevel;
+	private String question8difficultylevel;
+	private String question9difficultylevel;
+	private String question10difficultylevel;
+	private String question11difficultylevel;
+	private String question12difficultylevel;
+	private String question13difficultylevel;
+	private String question14difficultylevel;
+	private String question15difficultylevel;
+	private String question16difficultylevel;
+	private String question17difficultylevel;
+	private String question18difficultylevel;
+	private String question19difficultylevel;
+	private String question20difficultylevel;
 	public String getCoursename() {
 		return coursename;
 	}

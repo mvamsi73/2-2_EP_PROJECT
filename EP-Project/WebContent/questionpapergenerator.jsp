@@ -102,16 +102,17 @@ sqb.setvalues(qb,finalpaper);
 if(cd.insertnewqpaper(qb)>0)
 {
 %>
+	<p align="right" style="color:red; font-weight:600;">Total Marks:100</p>
 	<h1 align="center" style="padding-top: 2%;">PART-A</h1>
 	<p align="right" style="color:red; font-weight:600;">Total Part-A Marks:<%=qb.getTotalpartAmarks() %></p>
 	<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 	<tbody>
-	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td></tr>
-	<tr><td>1</td><td><%=qb.getQuestion1() %></td></tr>
-	<tr><td>2</td><td><%=qb.getQuestion2() %></td></tr>
-	<tr><td>3</td><td><%=qb.getQuestion3() %></td></tr>
-	<tr><td>4</td><td><%=qb.getQuestion4() %></td></tr>
-	<tr><td>5</td><td><%=qb.getQuestion5() %></td></tr>
+	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td><td>Marks</td><td>Difficulty-Level</td></tr>
+	<tr><td>1</td><td><%=qb.getQuestion1() %></td><td><%=qb.getQuestion1marks() %></td><td><%=qb.getQuestion1difficultylevel() %></td></tr>
+	<tr><td>2</td><td><%=qb.getQuestion2() %></td><td><%=qb.getQuestion2marks() %></td><td><%=qb.getQuestion2difficultylevel() %></td></tr>
+	<tr><td>3</td><td><%=qb.getQuestion3() %></td><td><%=qb.getQuestion3marks() %></td><td><%=qb.getQuestion3difficultylevel() %></td></tr>
+	<tr><td>4</td><td><%=qb.getQuestion4() %></td><td><%=qb.getQuestion4marks() %></td><td><%=qb.getQuestion4difficultylevel() %></td></tr>
+	<tr><td>5</td><td><%=qb.getQuestion5() %></td><td><%=qb.getQuestion5marks() %></td><td><%=qb.getQuestion5difficultylevel() %></td></tr>
 	</tbody>
 	</table>
 	
@@ -119,38 +120,38 @@ if(cd.insertnewqpaper(qb)>0)
 	<p align="right" style="color:red; font-weight:600;">Total Part-B Marks:<%=qb.getTotalpartBmarks() %></p>
 	<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 	<tbody>
-	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td></tr>
-	<tr><td>6</td><td><%=qb.getQuestion6() %></td></tr>
-	<tr><td>7</td><td><%=qb.getQuestion7() %></td></tr>
-	<tr><td>8</td><td><%=qb.getQuestion8() %></td></tr>
-	<tr><td>9</td><td><%=qb.getQuestion9() %></td></tr>
-	<tr><td>10</td><td><%=qb.getQuestion10() %></td></tr>
+	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td><td>Marks</td><td>Difficulty-Level</td></tr>
+	<tr><td>6</td><td><%=qb.getQuestion6() %></td><td><%=qb.getQuestion6marks() %></td><td><%=qb.getQuestion6difficultylevel() %></td></tr>
+	<tr><td>7</td><td><%=qb.getQuestion7() %></td><td><%=qb.getQuestion7marks() %></td><td><%=qb.getQuestion7difficultylevel() %></td></tr>
+	<tr><td>8</td><td><%=qb.getQuestion8() %></td><td><%=qb.getQuestion8marks() %></td><td><%=qb.getQuestion8difficultylevel() %></td></tr>
+	<tr><td>9</td><td><%=qb.getQuestion9() %></td><td><%=qb.getQuestion9marks() %></td><td><%=qb.getQuestion9difficultylevel() %></td></tr>
+	<tr><td>10</td><td><%=qb.getQuestion10() %></td><td><%=qb.getQuestion10marks() %></td><td><%=qb.getQuestion10difficultylevel() %></td></tr>
 	</tbody>
 	</table>
 	
 	<h1 align="center" style="padding-top: 2%;">PART-C</h1>
-	<p align="right" style="color:red; font-weight:600;">Total Part-C Marks:<%=qb.getTotalpartCmarks() %></p>
+	<p align="right" style="color:red; font-weight:600;">Total Part-C Marks: <%=qb.getTotalpartCmarks() %></p>
 	<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 	<tbody>
-	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td></tr>
-	<tr><td>11</td><td><%=qb.getQuestion11() %></td></tr>
-	<tr><td>12</td><td><%=qb.getQuestion12() %></td></tr>
-	<tr><td>13</td><td><%=qb.getQuestion13() %></td></tr>
-	<tr><td>14</td><td><%=qb.getQuestion14() %></td></tr>
-	<tr><td>15</td><td><%=qb.getQuestion15() %></td></tr>
+	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td><td>Marks</td><td>Difficulty-Level</td></tr>
+	<tr><td>11</td><td><%=qb.getQuestion11() %></td><td><%=qb.getQuestion11marks() %></td><td><%=qb.getQuestion11difficultylevel() %></td></tr>
+	<tr><td>12</td><td><%=qb.getQuestion12() %></td><td><%=qb.getQuestion12marks() %></td><td><%=qb.getQuestion12difficultylevel() %></td></tr>
+	<tr><td>13</td><td><%=qb.getQuestion13() %></td><td><%=qb.getQuestion13marks() %></td><td><%=qb.getQuestion13difficultylevel() %></td></tr>
+	<tr><td>14</td><td><%=qb.getQuestion14() %></td><td><%=qb.getQuestion14marks() %></td><td><%=qb.getQuestion14difficultylevel() %></td></tr>
+	<tr><td>15</td><td><%=qb.getQuestion15() %></td><td><%=qb.getQuestion15marks() %></td><td><%=qb.getQuestion15difficultylevel() %></td></tr>
 	</tbody>
 	</table>
 	
 	<h1 align="center" style="padding-top: 2%;">PART-D</h1>
-	<p align="right" style="color:red; font-weight:600;">Total Part-D Marks:<%=qb.getTotalpartDmarks() %></p>
+	<p align="right" style="color:red; font-weight:600;">Total Part-D Marks: <%=qb.getTotalpartDmarks() %></p>
 	<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 	<tbody>
-	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td></tr>
-	<tr><td>16</td><td><%=qb.getQuestion16() %></td></tr>
-	<tr><td>17</td><td><%=qb.getQuestion17() %></td></tr>
-	<tr><td>18</td><td><%=qb.getQuestion18() %></td></tr>
-	<tr><td>19</td><td><%=qb.getQuestion19() %></td></tr>
-	<tr><td>20</td><td><%=qb.getQuestion20() %></td></tr>
+	<tr><td style="font-weight:600;" width="10%">Question Number</td><td style="font-weight:600;">Question Description</td><td>Marks</td><td>Difficulty-Level</td></tr>
+	<tr><td>16</td><td><%=qb.getQuestion16() %></td><td><%=qb.getQuestion16marks() %></td><td><%=qb.getQuestion16difficultylevel() %></td></tr>
+	<tr><td>17</td><td><%=qb.getQuestion17() %></td><td><%=qb.getQuestion17marks() %></td><td><%=qb.getQuestion17difficultylevel() %></td></tr>
+	<tr><td>18</td><td><%=qb.getQuestion18() %></td><td><%=qb.getQuestion18marks() %></td><td><%=qb.getQuestion18difficultylevel() %></td></tr>
+	<tr><td>19</td><td><%=qb.getQuestion19() %></td><td><%=qb.getQuestion19marks() %></td><td><%=qb.getQuestion19difficultylevel() %></td></tr>
+	<tr><td>20</td><td><%=qb.getQuestion20() %></td><td><%=qb.getQuestion20marks() %></td><td><%=qb.getQuestion20difficultylevel() %></td></tr>
 	</tbody>
 	</table>
 <%

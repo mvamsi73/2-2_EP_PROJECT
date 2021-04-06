@@ -206,7 +206,7 @@ else if(parseInt(easyC)+parseInt(mediumC)+parseInt(hardC)!=5)
 }
 else if(parseInt(easyD)+parseInt(mediumD)+parseInt(hardD)!=5)
 {
-	alert("Number of Questions in partC must be 5");
+	alert("Number of Questions in partD must be 5");
 	return false;
 }
 if((parseFloat(easyA)*parseFloat(easyAmarks)+parseFloat(mediumA)*parseFloat(mediumAmarks)+parseFloat(hardA)*parseFloat(hardAmarks)+parseFloat(easyB)*parseFloat(easyBmarks)+parseFloat(mediumB)*parseFloat(mediumBmarks)+parseFloat(hardB)*parseFloat(hardBmarks)+parseFloat(easyC)*parseFloat(easyCmarks)+parseFloat(mediumC)*parseFloat(mediumCmarks)+parseFloat(hardC)*parseFloat(hardCmarks)+parseFloat(easyD)*parseFloat(easyDmarks)+parseFloat(mediumD)*parseFloat(mediumDmarks)+parseFloat(hardD)*parseFloat(hardDmarks))==100)
@@ -270,7 +270,7 @@ else if(parseInt(easyC)+parseInt(mediumC)+parseInt(hardC)!=5)
 }
 else if(parseInt(easyD)+parseInt(mediumD)+parseInt(hardD)!=5)
 {
-	alert("Number of Questions in partC must be 5");
+	alert("Number of Questions in partD must be 5");
 	return false;
 }
 	if((parseFloat(easyA)*parseFloat(easyAmarks)+parseFloat(mediumA)*parseFloat(mediumAmarks)+parseFloat(hardA)*parseFloat(hardAmarks)+parseFloat(easyB)*parseFloat(easyBmarks)+parseFloat(mediumB)*parseFloat(mediumBmarks)+parseFloat(hardB)*parseFloat(hardBmarks)+parseFloat(easyC)*parseFloat(easyCmarks)+parseFloat(mediumC)*parseFloat(mediumCmarks)+parseFloat(hardC)*parseFloat(hardCmarks)+parseFloat(easyD)*parseFloat(easyDmarks)+parseFloat(mediumD)*parseFloat(mediumDmarks)+parseFloat(hardD)*parseFloat(hardDmarks))==100)
@@ -367,21 +367,21 @@ border-radius:15px;
 <form name="f1" action="setquestionpaperbeanvalues_stage1" method="post" onsubmit="return generatepaper()">
 <table align="center" style="background-color:white; box-shadow: 0 20px 40px 20px rgb(0 0 0 / 25%); padding:10%;">
 <tr><td><h1>PART-A</h1></td></tr>
-<tr><td>Enter Number of Easy-Level Questions in Part-A:</td><td><input type="number" name="easyA"></td><td>Marks:</td><td><input type="number" step="0.01" name="easyAmarks"></td></tr>
-<tr><td>Enter Number of Medium-Level Questions in Part-A:</td><td><input type="number" name="mediumA"  ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumAmarks"></td></tr>
-<tr><td>Enter Number of Hard-Level Questions in Part-A:</td><td><input type="number" name="hardA"  ></td><td>Marks:</td><td><input type="number" step="0.01" name="hardAmarks"></td></tr>
+<tr><td>Enter Number of Easy-Level Questions in Part-A:</td><td><input type="number" name="easyA" value="2"></td><td>Marks:</td><td><input type="number" step="0.01" name="easyAmarks" value="3"></td></tr>
+<tr><td>Enter Number of Medium-Level Questions in Part-A:</td><td><input type="number" name="mediumA" value="2" ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumAmarks" value="5"></td></tr>
+<tr><td>Enter Number of Hard-Level Questions in Part-A:</td><td><input type="number" name="hardA" value="1" ></td><td>Marks:</td><td><input type="number" step="0.01" name="hardAmarks" value="9"></td></tr>
 <tr><td><h1>PART-B</h1></td></tr>
-<tr><td>Enter Number of Easy-Level Questions in Part-B:</td><td><input type="number" name="easyB"  ></td><td>Marks:</td><td><input type="number" step="0.01" name="easyBmarks"></td></tr>
-<tr><td>Enter Number of Medium-Level Questions in Part-B:</td><td><input type="number" name="mediumB" ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumBmarks"></td></tr>
-<tr><td>Enter Number of Hard-Level Questions in Part-B:</td><td><input type="number" name="hardB" ></td><td>Marks:</td><td><input type="number" step="0.01" name="hardBmarks"></td></tr>
+<tr><td>Enter Number of Easy-Level Questions in Part-B:</td><td><input type="number" name="easyB" value="2" ></td><td>Marks:</td><td><input type="number" step="0.01" name="easyBmarks" value="3"></td></tr>
+<tr><td>Enter Number of Medium-Level Questions in Part-B:</td><td><input type="number" name="mediumB" value="2"></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumBmarks" value="5"></td></tr>
+<tr><td>Enter Number of Hard-Level Questions in Part-B:</td><td><input type="number" name="hardB" value="1"></td><td>Marks:</td><td><input type="number" step="0.01" name="hardBmarks" value="9"></td></tr>
 <tr><td><h1>PART-C</h1></td></tr>
-<tr><td>Enter Number of Easy-Level Questions in Part-C:</td><td><input type="number" name="easyC" ></td><td>Marks:</td><td><input type="number" step="0.01" name="easyCmarks"></td></tr>
-<tr><td>Enter Number of Medium-Level Questions in Part-C:</td><td><input type="number" name="mediumC" ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumCmarks"></td></tr>
-<tr><td>Enter Number of Hard-Level Questions in Part-C:</td><td><input type="number" name="hardC"></td><td>Marks:</td><td><input type="number" step="0.01" name="hardCmarks"></td></tr>
+<tr><td>Enter Number of Easy-Level Questions in Part-C:</td><td><input type="number" name="easyC" value="2"></td><td>Marks:</td><td><input type="number" step="0.01" name="easyCmarks" value="3"></td></tr>
+<tr><td>Enter Number of Medium-Level Questions in Part-C:</td><td><input type="number" name="mediumC" value="2"></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumCmarks" value="5"></td></tr>
+<tr><td>Enter Number of Hard-Level Questions in Part-C:</td><td><input type="number" name="hardC" value="1"></td><td>Marks:</td><td><input type="number" step="0.01" name="hardCmarks" value="9"></td></tr>
 <tr><td><h1>PART-D</h1></td></tr>
-<tr><td>Enter Number of Easy-Level Questions in Part-D:</td><td><input type="number" name="easyD" ></td><td>Marks:</td><td><input type="number" step="0.01" name="easyDmarks"></td></tr>
-<tr><td>Enter Number of Medium-Level Questions in Part-D:</td><td><input type="number" name="mediumD"  ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumDmarks"></td></tr>
-<tr><td>Enter Number of Hard-Level Questions in Part-D:</td><td><input type="number" name="hardD" ></td><td>Marks:</td><td><input type="number" step="0.01" name="hardDmarks"></td></tr>
+<tr><td>Enter Number of Easy-Level Questions in Part-D:</td><td><input type="number" name="easyD" value="2"></td><td>Marks:</td><td><input type="number" step="0.01" name="easyDmarks" value="3"></td></tr>
+<tr><td>Enter Number of Medium-Level Questions in Part-D:</td><td><input type="number" name="mediumD" value="2" ></td><td>Marks:</td><td><input type="number" step="0.01" name="mediumDmarks" value="5"></td></tr>
+<tr><td>Enter Number of Hard-Level Questions in Part-D:</td><td><input type="number" name="hardD" value="1"></td><td>Marks:</td><td><input type="number" step="0.01" name="hardDmarks" value="9"></td></tr>
 <tr><td><input type="hidden" name="paperid" value="<%=request.getAttribute("paperid") %>"></td></td></tr>
 <tr><td><input id="validatepaper" type="button" value="Validate Paper" onclick="return validate()">&nbsp;&nbsp;&nbsp;&nbsp;<input id="generate" type="submit" value="Generate paper" disabled></td></tr>
 </table>

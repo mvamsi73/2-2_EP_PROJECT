@@ -147,7 +147,7 @@ for(newhardquestionbean esy:hard)
 </div>
 
 <div align="center" style="padding-top:3%; padding-bottom:3%;">
-<input type="button" onclick="printDiv('printableArea')" value="Print Question Paper">
+<input type="button" onclick="printDiv('printableArea')" value="Print All Questions">
 </div>
 
   <!-- jQuery -->
