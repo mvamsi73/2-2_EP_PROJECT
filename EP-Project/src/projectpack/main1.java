@@ -7,7 +7,7 @@ public class main1 {
 	{
 		CRUD cd=new CRUD();
 //		System.out.println(cd.easyquestionssize());
-		cd.emptyproject();
+//		cd.emptyproject();
 //		System.out.println(cd.getpaperid());
 	}
 

@@ -9,11 +9,11 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class config 
 {
-	StandardServiceRegistry ssr;
-	Metadata meta;
-	SessionFactory sf;
-	Session session;
-	Transaction t;
+	public StandardServiceRegistry ssr;
+	public Metadata meta;
+	public SessionFactory sf;
+	public Session session;
+	public Transaction t;
 	public config()
 	{
 		this.ssr=new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
